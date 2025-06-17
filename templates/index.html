@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFBL Karachi Delivery Optimizer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- <img src="https://via.placeholder.com/40" alt="IFBL Logo" class="d-inline-block align-text-top me-2"> -->
+                IFBL Karachi Delivery Optimizer
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- Left Sidebar -->
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Delivery Locations</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Head Office Address</label>
+                            <div class="input-group">
+                                <input type="text" id="head-office" class="form-control" placeholder="Enter head office address">
+                                <button class="btn btn-primary" id="head-office-btn">Set</button>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Delivery Addresses</label>
+                            <div class="input-group mb-2">
+                                <input type="text" id="delivery-address" class="form-control" placeholder="Enter delivery address">
+                                <button class="btn btn-outline-primary" id="add-location-btn">Add</button>
+                            </div>
+                            <div id="location-list" class="list-group mt-2"></div>
+                        </div>
+                        
+                        <button id="optimize-btn" class="btn btn-success w-100 mt-3">
+                            <i class="bi bi-gear"></i> Optimize Delivery Route
+                        </button>
+                        
+                        <div class="mt-4">
+                            <div class="alert alert-info">
+                                <h6>Route Information</h6>
+                                <div id="route-info">
+                                    <p>Add locations to calculate optimized route</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map Container -->
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">Karachi Map</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-3 mt-4">
+        <div class="container">
+            <p class="mb-0">Iqra Food and Beverages Ltd. &copy; 2023. Delivery Route Optimization System.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>

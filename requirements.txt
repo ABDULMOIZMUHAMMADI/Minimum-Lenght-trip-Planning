@@ -1,0 +1,6 @@
+flask
+osmnx
+networkx
+numpy
+geopy
+python-tsp

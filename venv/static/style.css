@@ -1,0 +1,65 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#map {
+    height: 75vh;
+    width: 100%;
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.card {
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.route-marker {
+    background-color: #0d6efd;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.head-office-marker {
+    background-color: #198754;
+    width: 24px;
+    height: 24px;
+}
+
+#optimize-btn {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.location-badge {
+    cursor: pointer;
+}
+
+.leaflet-routing-container {
+    display: none;
+}
+
+.optimized-path {
+    stroke: #dc3545;
+    stroke-width: 5;
+    stroke-linecap: round;
+    fill: none;
+    opacity: 0.8;
+}
